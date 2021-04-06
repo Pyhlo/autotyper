@@ -21,6 +21,6 @@ int main() {
         if (press_enter == 1) simulateKeypress(0x0D);
         //std::cout << "Wrote word " << ran << " time(s)" << std::endl;
     } while(times > ran);
-
+    std::cout << "Done, exit status 0" << std::endl;
     return EXIT_SUCCESS;
 }
