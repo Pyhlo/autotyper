@@ -29,9 +29,7 @@ int writeWord(std::string word) {
     transform(word.begin(), word.end(), word.begin(), ::toupper);
     //std::cout << word << std::endl;
     for (int letter : word) {
-        if (letter == 0x2F) {
-            letter = 0x6F;
-        }
+        if (letter == 0x2F) letter = 0x6F;
         simulateKeypress(letter);
         //std::cout << "Pressed key: " << std::hex << letter << std::endl;
         //simulateKeypress(VK_F12);
